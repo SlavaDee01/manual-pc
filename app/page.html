@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <svg display="none" xmlns="http://www.w3.org/2000/svg">
+   <symbol id="header__btn-icon" viewBox="0 0 10 16">
+        <g>
+           <path d="M1.5 1L7.79289 7.29289C8.18342 7.68342 8.18342 8.31658 7.79289 8.70711L1.5 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+        </g>
+    </symbol>
+    <symbol id="post_btn" viewBox="0 0 22 22">
+        <g>
+            <path d="M21 11L1 1L3.5 11M21 11L1 21L3.5 11M21 11H3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+        </g>
+    </symbol>
+    <symbol id="search_icon" viewBox="0 0 24 24">
+        <g>
+           <circle cx="10" cy="10" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M14.5 14.5L19 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>  
+        </g>
+    </symbol>
+    <symbol id="social_icon" viewBox="0 0 32 32" width="32" height="32"> 
+      <g>
+           <path d="M14.2222 17.7779L13.4411 16.9968C12.3997 15.9554 12.3997 14.267 13.4411 13.2256L19.4477 7.21904C20.4891 6.17764 22.1775 6.17764 23.2189 7.21904L24.781 8.78113C25.8224 9.82253 25.8224 11.511 24.781 12.5524L22.6666 14.6667M17.7777 14.2223L18.5588 15.0034C19.6002 16.0448 19.6002 17.7332 18.5588 18.7746L12.5522 24.7811C11.5108 25.8225 9.8224 25.8225 8.78101 24.7811L7.21892 23.219C6.17752 22.1776 6.17752 20.4892 7.21891 19.4478L9.33329 17.3334" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </symbol>
+  </svg>
+  <header class="header">
+     <a class="logo" href="#">
+      <img class="logo__image" src="images/logo-b.svg" alt="image">
+     </a>
+    <form class="header__form">
+      <input class="header__form-input" type="text" style="outline: none;" required>
+      <button class="header__form-submit" type="submit">
+        <svg class="header__form-icon"><use xlink:href="#search_icon"></use></svg>
+      </button>
+    </form>
+      <button class="header__btn" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="#header__btn-icon"></use></svg>
+      </button>
+      <button class="header__menu-btn" data-modal="#modal-menu"></button>
+  </header>  
+ <div class="sidebar"> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item-menu1.svg" alt="image"></a> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item_menu2.svg" alt="image"></a> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item_menu3.svg" alt="image"></a> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item_menu4.svg" alt="image"></a> 
+ </div>
+  <div class="wrapper">
+    <main class="main">
+      <h1 class="intro__title">manual-pc</h1>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+        <ul class="footer__info-items">
+          <li class="footer__info-item">© manualpc.ru, 2023</li>
+          <li class="footer__info-item">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer__info-items">
+          <li class="footer__info-item footer__info-name">UX/UI desiner - 
+            <a href="#">Борис Маслов</a>
+          </li>
+          <li class="footer__info-item footer__info-divider">|</li>
+          <li class="footer__info-item footer__info-name">Developer - 
+            <a href="#">Николай Морозов</a>
+          </li>
+        </ul>
+       </div>
+    </footer>
+    <div class="modal" id="modal-add">
+       <div class="modal__dialog">     
+            <div class="modal__content">
+              <button class="modal-close" type="button" data-close="#modal-add">
+                  <img src="images/close.svg" alt="Close">
+              </button>  
+              <h3 class="modal__title">Предложить статью</h3>
+                <form class="modal__form" action="email">
+                  <label for="modal__form-name">Ваше имя</label>
+                  <input class="modal__form-name" id="modal__form-name" type="text" placeholder="Введите ваше Имя">
+                  <label for="modal__form-email">Ваше e-mail*</label>
+                  <input class="modal__form-email" id="modal__form-email" name="email" type="email" placeholder="Введите ваше E-mail">
+                  <label for="modal__form-input">Тема*</label>
+                  <textarea class="modal__form-input" id="modal__form-input" placeholder="Введите название или названия нескольких тем для предложения"></textarea>
+                  <button class="modal__btn"  type="submit">Предложить статью</button>
+                </form>
+            </div>  
+       </div>  
+   </div>
+   <div class="modal-menu" id="modal-menu">
+    <div class="modal-menu__dialog">
+    <header class="header">
+     <a class="logo" href="#">
+      <img class="logo__image" src="images/logo-b.svg" alt="image">
+     </a>
+     <form class="header__form">
+      <input class="header__form-input" type="text" style="outline: none;" required>
+      <button class="header__form-submit" type="submit">
+        <svg class="header__form-icon"><use xlink:href="#search_icon"></use></svg>
+      </button>
+     </form>
+      <button class="header__btn" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="#header__btn-icon"></use></svg>
+      </button>
+      <button class="modal-menu__close" type="button" data-close="#modal-add"></button> 
+    </header>  
+    <div class="modal-menu__info">
+      <button class="header__btn-menu" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="#header__btn-icon"></use></svg>
+      </button>
+    <div id="gallery_social">
+      <div class="social">
+        <h2 class="social__title-menu empty">Lorem</h2>
+        <ul class="social__items">
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--telegram" src="images/links/Telegram.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--vkontakte" src="images/links/Vkontakte.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--youtube" src="images/links/YouTube.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--rss" src="images/links/RSS.svg" alt="image">
+            </a>
+          </li>
+        </ul>
+       </div>
+      </div>
+      <div class="sidebar__menu"> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item-menu1.svg" alt="image"></a> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item_menu2.svg" alt="image"></a> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item_menu3.svg" alt="image"></a> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item_menu4.svg" alt="image"></a> 
+      </div>
+     </div>
+   </div> 
+  </div> 
+</div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

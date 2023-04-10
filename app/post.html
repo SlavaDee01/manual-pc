@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual-pc | Установка анимированных обоев</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <svg display="none" xmlns="http://www.w3.org/2000/svg">
+   <symbol id="header__btn-icon" viewBox="0 0 10 16">
+        <g>
+           <path d="M1.5 1L7.79289 7.29289C8.18342 7.68342 8.18342 8.31658 7.79289 8.70711L1.5 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+        </g>
+    </symbol>
+    <symbol id="post_btn" viewBox="0 0 22 22">
+        <g>
+            <path d="M21 11L1 1L3.5 11M21 11L1 21L3.5 11M21 11H3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+        </g>
+    </symbol>
+    <symbol id="search_icon" viewBox="0 0 24 24">
+        <g>
+           <circle cx="10" cy="10" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M14.5 14.5L19 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>  
+        </g>
+    </symbol>
+    <symbol id="social_icon" viewBox="0 0 32 32" width="32" height="32"> 
+      <g>
+           <path d="M14.2222 17.7779L13.4411 16.9968C12.3997 15.9554 12.3997 14.267 13.4411 13.2256L19.4477 7.21904C20.4891 6.17764 22.1775 6.17764 23.2189 7.21904L24.781 8.78113C25.8224 9.82253 25.8224 11.511 24.781 12.5524L22.6666 14.6667M17.7777 14.2223L18.5588 15.0034C19.6002 16.0448 19.6002 17.7332 18.5588 18.7746L12.5522 24.7811C11.5108 25.8225 9.8224 25.8225 8.78101 24.7811L7.21892 23.219C6.17752 22.1776 6.17752 20.4892 7.21891 19.4478L9.33329 17.3334" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </symbol>
+  </svg>
+  <header class="header">
+     <a class="logo" href="#">
+      <img class="logo__image" src="images/logo-b.svg" alt="image">
+     </a>
+    <form class="header__form">
+      <input class="header__form-input" type="text" style="outline: none;" required>
+      <button class="header__form-submit" type="submit">
+        <svg class="header__form-icon"><use xlink:href="#search_icon"></use></svg>
+      </button>
+    </form>
+      <button class="header__btn" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="#header__btn-icon"></use></svg>
+      </button>
+      <button class="header__menu-btn" data-modal="#modal-menu"></button>
+  </header>  
+ <div class="sidebar"> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item-menu1.svg" alt="image"></a> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item_menu2.svg" alt="image"></a> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item_menu3.svg" alt="image"></a> 
+  <a class="sidebar__item" href="#">
+    <img class="sidebar__image" src="src/images/item_menu4.svg" alt="image"></a> 
+ </div>
+  <div class="wrapper">
+    <main class="main">
+      <div class="post">
+        <div class="post__item">
+         <h1 class="post__title">Установка анимированных обоев в Windows</h1>
+         <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная |</a> 
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Windows 10 |</a> 
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#"><span>24.01.2023</span></a>
+            </li>
+          </ul>
+         </div>
+         <div class="preview">
+          <img class="post__image" src="images/content/post1.png" alt="image">
+             <p class="post__text">
+               Установка фонового изображения на рабочий стол операционной системы — процесс,
+               не вызывающий сложности даже у не очень опытных пользователей. Однако по умолчанию Windows поддерживает только статичные картинки, анимированные форматы воспроизводиться не будут. Поэтому если вы решили установить живые обои вместо надоевших статичных, потребуется воспользоваться альтернативными вариантами.
+             </p>
+         </div><!-- prewiev end -->
+         <div class="post__article">
+          <section class="post__section" data-section="a" id="section-a">
+            <h3 class="post__title-section post__title_point">Способ 1: Video Wallpaper</h3>
+             <p class="post__text">
+               Популярная программа для установки живых обоев, обладающая простым интерфейсом 
+               и хорошим выбором фонов. Поддерживает видео со звуком. Приложение платное и стоит порядка $5, триальный период в 30 суток позволяет ознакомиться со всеми функциональными возможностями. Напоминанием о необходимости покупки будет полупрозрачная надпись «TRIAL VERSION» в левом нижнем углу экрана.
+             </p>
+           <div class="post__banner"><p>Место под баннер</p></div>
+           <a class="post__link" href="#">Скачать Video Wallpaper с официального сайта</a>
+             <p class="post__text-icon">1</p>
+             <p class="post__text post__text-num">Установите и откройте программу обычным способом. Сразу же после запуска стандартный фон изменится на анимированный, это образец работы программы.</p>
+            <img class="post__image post__text-image" src="images/content/post2.png" alt="image">
+          </section>
+          <section class="post__section" data-section="b" id="section-b">
+            <h3 class="post__title-section post__title_point">Способ 2: DeskScapes</h3>
+            <p class="post__text-icon">2</p>
+            <p class="post__text post__text-num">
+              Откройте рабочее окно Video Wallpaper. Отобразится плейлист с 4 шаблонами, который можно удалить или просто создать собственный. Мы разберем создание нового плейлиста.</p>
+            <img class="post__image" src="images/content/post3.png" alt="image">
+          </section>
+          <section class="post__section" data-section="c" id="section-c">
+            <h3 class="post__title-section post__title_point">Способ 3: Wallpaper Engine</h3>
+            <p class="post__text-icon">3</p>
+            <p class="post__text post__text-num">Для него вам нужно вручную скачать анимированные файлы с сайта программы. 
+              Вы также можете установить собственные обои — для этого у вас должны быть видеофайлы, разрешение которых совпадает с разрешением экрана (например, 1920х1080).</p>
+            <img class="post__image" src="images/content/post4.png" alt="image">
+          </section>
+          <section class="post__section">
+            <h3 class="empty">lorem</h3> 
+            <p class="post__text-icon">4</p>
+            <p class="post__text post__text-num">
+              Как вы видите, выбор стандартных изображений очень маленький. Поэтому пользователи предпочитают скачивать и устанавливать изображения вручную. 
+              Для этого есть 4 варианта:</p>
+            <p class="post__text-end">
+              Обои типа «Video», воспроизводящиеся вместо заставки, естественно, будут потреблять большое количество ресурсов, чем «Scene».</p>
+            </section>
+          </div>
+          <div class="post__slides">
+            <h2 class="post__slides-title">статьи по данной теме:</h2>
+            <div class="post__slider">
+             <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                 <a class="swiper-link" href="#">
+                  <p class="swiper-text"></p>
+                    <img class="swiper-image" src="images/content/slide1.png" alt="image">
+                 </a>
+               </div>
+               <div class="swiper-slide">
+                 <a class="swiper-link" href="#">
+                  <p class="swiper-text"></p>
+                    <img class="swiper-image" src="images/content/slide2.png" alt="image">
+                 </a>
+               </div>
+               <div class="swiper-slide">
+                 <a class="swiper-link" href="#">
+                  <p class="swiper-text"></p>
+                    <img class="swiper-image" src="images/content/slide3.png" alt="image">
+                 </a>
+               </div>
+               <div class="swiper-slide">
+                 <a class="swiper-link" href="#">
+                  <p class="swiper-text"></p>
+                    <img class="swiper-image" src="images/content/slide1.png" alt="image">
+                 </a>
+               </div>
+               <div class="swiper-slide">
+                 <a class="swiper-link" href="#">
+                  <p class="swiper-text"></p>
+                    <img class="swiper-image" src="images/content/slide2.png" alt="image">
+                 </a>
+               </div>
+               <div class="swiper-slide">
+                 <a class="swiper-link" href="#">
+                  <p class="swiper-text"></p>
+                    <img class="swiper-image" src="images/content/slide3.png" alt="image">
+                 </a>
+               </div>     
+             </div>
+             <ul class="post__slider-btns">
+              <li class="swiper-button-prev"></li>
+              <li class="swiper-button-next"></li>
+             </ul>
+            </div>
+          </div>
+      <div class="post__comments">
+      <h2 class="post__comments-title">Оставьте комментарий</h2>
+       <form class="post__form" action="email">
+          <input class="post__input-name" type="text" style="outline: none;" placeholder="Имя *">
+          <input class="post__input-email" type="text" style="outline: none;" placeholder="E-mail *">
+          <input class="post__input-comments" type="text" style="outline: none;" required placeholder="Задайте вопрос или оставьте своё мнение">
+          <button class="post__input-submit" type="submit">
+             <svg class="post__input-btn"><use xlink:href="#post_btn"></use></svg>
+          </button>
+       </form>
+      </div>
+    </div>
+    <div class="post__item post__item--menu">
+      <h3 class="post__title--menu">Содержание</h3>
+       <div class="post__item-dropdown">
+        <div class="post__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 11</button>
+         <div id="myDropdown-a" class="post__dropdown-content">
+          <nav class="post__nav">
+           <ul>
+             <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+              <a href="#section-a">Способ 1: Video Wallpaper</a>
+             </li>
+             <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+              <a href="#section-b">Способ 2: DeskScapes</a>
+             </li>
+             <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+              <a href="#section-c">Способ 3: Wallpaper Engine</a>
+             </li>
+           </ul>
+          </nav>
+         </div>
+        </div>
+        <div class="post__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 8</button>
+          <div id="myDropdown-b" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="post__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 8.1</button>
+          <div id="myDropdown-c" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="post__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 8</button>
+          <div id="myDropdown-d" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="post__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-e" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+       </div>   
+       <div class="post__item-feedback">
+          <ul class="post__feedback">
+            <li class="post__feedback-item">
+              <a class="post__feedback-link  post__feedback-link--like" href="#">
+                <img class="post__feedback-image" src="images/links/smile.svg" alt="image">
+                <p>10</p>
+              </a>
+            </li>
+            <li class="post__feedback-item">
+              <a class="post__feedback-link post__feedback-link--unlike" href="#">
+                <img class="post__feedback-image" src="images/links/sad.svg" alt="image">
+                <p>2</p>
+              </a>
+            </li>
+            <li class="post__feedback-item">
+              <a class="post__feedback-link post__feedback-link--comments" href="#">
+                <img class="post__feedback-image" src="images/links/annotation.svg" alt="image">
+                <p>25</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="post__social">
+            <li class="post__social-item">
+            <a class="post__social-link post__social-image--telegram" href="#">
+              <img class="post__social-image" src="images/links/Telegram.svg" alt="image">
+            </a>
+          </li>
+          <li class="post__social-item">
+            <a class="post__social-link post__social-image--vkontakte" href="#">
+              <img class="post__social-image" src="images/links/Vkontakte.svg" alt="image">
+            </a>
+          </li>
+          <li class="post__social-item">
+            <a class="post__social-link post__social-image--whatsapp" href="#">
+              <img class="post__social-image" src="images/links/whatsapp.svg" alt="image">
+            </a>
+          </li>
+          <li class="post__social-item">
+            <a class="post__social-link post__social-image--ok"" href="#">
+              <img class="post__social-image" src="images/links/ok.svg" alt="image">
+            </a>
+          </li>
+          <li class="post__social-item">
+            <a class="post__social-link post__social-image--viber"" href="#">
+              <img class="post__social-image" src="images/links/viber.svg" alt="image">
+            </a>
+          </li>
+          <li class="post__social-item post__social-item--lnk">
+            <a class="post__social-link post__social-link--lnk" href="#">
+              <svg class="post__social-image--lnk"><use xlink:href="#social_icon"></use></svg>
+            </a>
+          </li> 
+         </ul>
+        </div> 
+       </div>
+      </div><!-- POst end -->
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+        <ul class="footer__info-items">
+          <li class="footer__info-item">© manualpc.ru, 2023</li>
+          <li class="footer__info-item">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer__info-items">
+          <li class="footer__info-item footer__info-name">UX/UI desiner - 
+            <a href="#">Борис Маслов</a>
+          </li>
+          <li class="footer__info-item footer__info-divider">|</li>
+          <li class="footer__info-item footer__info-name">Developer - 
+            <a href="#">Николай Морозов</a>
+          </li>
+        </ul>
+       </div>
+    </footer>
+    <div class="modal" id="modal-add">
+       <div class="modal__dialog">     
+            <div class="modal__content">
+              <button class="modal-close" type="button" data-close="#modal-add">
+                  <img src="images/close.svg" alt="Close">
+              </button>  
+              <h3 class="modal__title">Предложить статью</h3>
+                <form class="modal__form" action="email">
+                  <label for="modal__form-name">Ваше имя</label>
+                  <input class="modal__form-name" id="modal__form-name" type="text" placeholder="Введите ваше Имя">
+                  <label for="modal__form-email">Ваше e-mail*</label>
+                  <input class="modal__form-email" id="modal__form-email" name="email" type="email" placeholder="Введите ваше E-mail">
+                  <label for="modal__form-input">Тема*</label>
+                  <textarea class="modal__form-input" id="modal__form-input" placeholder="Введите название или названия нескольких тем для предложения"></textarea>
+                  <button class="modal__btn"  type="submit">Предложить статью</button>
+                </form>
+            </div>  
+       </div>  
+   </div>
+   <div class="modal-menu" id="modal-menu">
+    <div class="modal-menu__dialog">
+    <header class="header">
+     <a class="logo" href="#">
+      <img class="logo__image" src="images/logo-b.svg" alt="image">
+     </a>
+     <form class="header__form">
+      <input class="header__form-input" type="text" style="outline: none;" required>
+      <button class="header__form-submit" type="submit">
+        <svg class="header__form-icon"><use xlink:href="#search_icon"></use></svg>
+      </button>
+     </form>
+      <button class="header__btn" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="#header__btn-icon"></use></svg>
+      </button>
+      <button class="modal-menu__close" type="button" data-close="#modal-add"></button> 
+    </header>  
+    <div class="modal-menu__info">
+      <button class="header__btn-menu" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="#header__btn-icon"></use></svg>
+      </button>
+    <div id="gallery_social">
+      <div class="social">
+        <h2 class="social__title-menu empty">Lorem</h2>
+        <ul class="social__items">
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--telegram" src="images/links/Telegram.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--vkontakte" src="images/links/Vkontakte.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--youtube" src="images/links/YouTube.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--rss" src="images/links/RSS.svg" alt="image">
+            </a>
+          </li>
+        </ul>
+       </div>
+      </div>
+      <div class="sidebar__menu"> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item-menu1.svg" alt="image"></a> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item_menu2.svg" alt="image"></a> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item_menu3.svg" alt="image"></a> 
+         <a class="sidebar__item" href="#">
+          <img class="sidebar__image" src="src/images/item_menu4.svg" alt="image"></a> 
+      </div>
+     </div>
+   </div> 
+  </div> 
+</div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
